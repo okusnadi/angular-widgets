@@ -9,10 +9,12 @@ module.exports = function(grunt) {
         concat: {
             js: {
                 src: [
+                    'lib/intro.js',
                     'lib/index.js',
                     'lib/directives/*.js',
                     'lib/services/*.js',
-                    'lib/controllers/*.js'
+                    'lib/controllers/*.js',
+                    'lib/outro.js',
                 ],
                 dest: './dist/angular-widgets.js'
             }

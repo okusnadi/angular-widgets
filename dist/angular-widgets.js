@@ -1,3 +1,16 @@
+(function(angular, factory) {
+	'use strict'
+
+	if (typeof define === 'function' && define.amd) {
+		define(['angular'], function(angular) {
+			return factory(angular)
+		})
+	} else {
+		return factory(angular)
+	}
+}(window.angular || null, function(angular) {
+	'use strict'
+
 (function() {
 	'use strict'
 
@@ -84,3 +97,6 @@
 	angular.module('angular.widgets')
 		.directive('stopPropagation', stopPropagation)
 })()
+
+	return angular.module('angular.widgets')
+}))
