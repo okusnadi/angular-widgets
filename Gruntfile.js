@@ -1,9 +1,9 @@
-'use strict'
+'use strict';
 
 module.exports = function(grunt) {
 
-    require('load-grunt-tasks')(grunt)
-    grunt.loadNpmTasks('grunt-contrib-jshint')
+    require('load-grunt-tasks')(grunt);
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     grunt.initConfig({
         concat: {
@@ -32,12 +32,12 @@ module.exports = function(grunt) {
                 jshintrc: '.jshintrc',
                 reporter: require('jshint-stylish')
             },
-            all: ['Gruntfile.js', 'lib/**/*.js']
+            all: ['Gruntfile.js', 'lib/directives/*.js', 'lib/services/*.js', 'lib/controllers/*.js']
         }
-    })
+    });
 
     grunt.registerTask('default', [
         'concat',
         'uglify'
-    ])
-}
+    ]);
+};
