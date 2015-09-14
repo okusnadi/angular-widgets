@@ -3,19 +3,16 @@
 
 	if (typeof define === 'function' && define.amd) {
 		define(['angular'], function(angular) {
-			return factory(angular)
-		})
+			return factory(angular);
+		});
 	} else {
-		return factory(angular)
+		return factory(angular);
 	}
 }(window.angular || null, function(angular) {
 	'use strict';
 
-(function() {
-	'use strict'
+	var app = angular.module('angular.widgets', []);
 
-	angular.module('angular.widgets', [])
-})()
 /**
  * @desc this directive sets a focus to input element
  */
@@ -98,5 +95,5 @@
 		.directive('stopPropagation', stopPropagation)
 })()
 
-	return angular.module('angular.widgets')
-}))
+	return app;
+}));

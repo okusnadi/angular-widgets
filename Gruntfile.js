@@ -10,7 +10,6 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     'lib/intro.js',
-                    'lib/index.js',
                     'lib/directives/*.js',
                     'lib/services/*.js',
                     'lib/controllers/*.js',
