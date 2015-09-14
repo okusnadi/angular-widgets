@@ -1,5 +1,5 @@
 (function(angular, factory) {
-	'use strict'
+	'use strict';
 
 	if (typeof define === 'function' && define.amd) {
 		define(['angular'], function(angular) {
@@ -9,7 +9,7 @@
 		return factory(angular)
 	}
 }(window.angular || null, function(angular) {
-	'use strict'
+	'use strict';
 
 (function() {
 	'use strict'
