@@ -1,0 +1,21 @@
+{
+  "name": "angular-widgets",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://github.com/volgunin/angular-widgets",
+  "authors": [
+    "Alexander Volgunin <avolgunin@gmail.com>"
+  ],
+  "description": "Directives, Services and Controllers for AngularJS applications",
+  "license": "MIT",
+  "main": [
+    "./dist/angular-widgets.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

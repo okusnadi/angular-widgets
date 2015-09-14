@@ -1,0 +1,5 @@
+node_modules
+bower_components
+
+# Debug log from npm
+npm-debug.log
